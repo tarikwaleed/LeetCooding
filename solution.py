@@ -20,16 +20,18 @@ def take_variables():
     return (map(int, input().split()))
 
 
+def solution():
+    limak, bob = take_variables()
+    count = 0
+    while limak <= bob:
+        limak *= 3
+        bob *= 2
+        count += 1
+    return count
+
+
 def main():
-    n, h = take_variables()
-    friends = take_list()
-    width = 0
-    for friend in friends:
-        if friend > h:
-            width += 2
-        else:
-            width += 1
-    print(width)
+    print(solution())
 
 
 if __name__ == '__main__':

@@ -34,5 +34,31 @@ print(*list_of_lists)
 
 ```python
 Output:
-[..,..], [..,.., .., ..], [..,..]
+[..,..] [..,.., .., ..] [..,..]
 ```
+
+## Trick from CF268-D2-A
+
+suppose you have the followint input:
+
+3
+
+1 2
+
+3 4
+
+5 6
+
+the first line of input is n .
+
+the following line of code takes the input as rows and then convert them to colums using zip():
+
+```python
+a, b = zip(*(input().split() for _ in '_' * n))
+```
+
+a=[1,3,5]
+
+b=[2,4,6]
+
+

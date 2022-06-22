@@ -21,12 +21,17 @@ def take_variables():
 
 
 def solution():
-    limak, bob = take_variables()
+    n = take_integer()
+    uniforms = []
     count = 0
-    while limak <= bob:
-        limak *= 3
-        bob *= 2
-        count += 1
+    for i in range(n):
+        x, y = take_variables()
+        uniforms.append(x)
+        uniforms.append(y)
+    for i in range(0, n * 2, 2):
+        for j in range(1, n * 2, 2):
+            if uniforms[i] == uniforms[j]:
+                count += 1
     return count
 
 

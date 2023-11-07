@@ -1,6 +1,6 @@
-# Some cool hacks tricks i learned during my competitive programming journey
+**Some cool hacks tricks i learned during my competitive programming journey**
 
-**if you want to iterate n times and you don't want to use the iteration variable**
+- if you want to iterate n times and you don't want to use the iteration variable
 
 ```python
 for _ in '-' * n:
@@ -37,7 +37,7 @@ Output:
 [..,..] [..,.., .., ..] [..,..]
 ```
 
-## Trick from CF268-D2-A
+**Trick from CF268-D2-A**
 
 suppose you have the followint input:
 

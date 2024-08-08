@@ -1,6 +1,6 @@
-**Some cool hacks tricks i learned during my competitive programming journey**
+# Some cool hacks tricks i learned during my competitive programming journey
 
-- if you want to iterate n times and you don't want to use the iteration variable
+## if you want to iterate n times and you don't want to use the iteration variable
 
 ```python
 for _ in '-' * n:
@@ -14,7 +14,7 @@ for _ in range(n):
     print('a')
 ```
 
-### to take n line of input as list of lists
+## to take n line of input as list of lists
 
 ```python
 list_of_lists = [input().split() for _ in '_' * n]
@@ -26,7 +26,7 @@ Output:
 [[..,..],[..,..,..,..],[..,..]]
 ```
 
-### to unpack the list
+## to unpack the list
 
 ```python
 print(*list_of_lists)
@@ -39,7 +39,7 @@ Output:
 
 **Trick from CF268-D2-A**
 
-suppose you have the followint input:
+suppose you have the following input:
 
 3
 
@@ -61,4 +61,7 @@ a=[1,3,5]
 
 b=[2,4,6]
 
-
+### to get the binary representation of an integer n 
+```python
+print(bin(n)[2:])
+```
